@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>location</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_0g5j9nosz7l5.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.location {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* Boss名片页面 */
+			.location{
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.location .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.location .top a {
+				flex: 5 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.location .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.location .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.location .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 填写信息 */
+			.location .write {
+				flex-grow: 3rem;
+				font-size: 0.38rem;
+				margin-top: 0.3rem;
+			}
+			.location .write input {
+				border: 0;
+				font-size: 0.52rem;
+				font-family: 楷体;
+				margin: 0.2rem auto;
+				width: 7rem;
+			}
+			.location .one,.location .two{
+				margin-top: 0.25rem;
+				border-bottom: 1px solid #AAAAAA;
+			}
+			.location .write a{
+				float: right;
+				font-size: 0.42rem;
+			}
+			/* 填写结束 */
+			.location .right {
+				flex-basis: 1rem;
+				font-size: 0.32rem;
+				margin-top: 0.3rem;
+				text-align: right;
+			}
+			/* 按钮 */
+			.location .button {
+				flex-grow: 1;
+				font-size: 0.5rem;
+				/* margin-top:rem ; */
+			}
+			.location .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4.4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 底部按钮结束 */
+			/* 工作地点页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="location">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./Describe.html"></a>
+			</div>
+			<div class="title">
+				<span>工作地点</span>
+				<p>详细的工作地点让牛人更准确的找到公司</p>
+			</div>
+			<div class="write">
+				<div class="one">
+					<span>公司地址</span>
+					<div class="select">
+						<input type="text" placeholder="办公大楼名称 例:冠捷大厦">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="two">
+					<span>门牌号</span>
+					<div class="select">
+						<input type="text" placeholder="楼号/门牌号等 例:3楼402室">
+					</div>
+				</div>
+			</div>
+			<div class="right">0/20</div>
+			<div class="button">
+				<a href="./">保存</a>
+			</div>
+		</div>
+	</body>
+</html>

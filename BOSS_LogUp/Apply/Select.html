@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>select</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.select {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 选择页面 */
+			.select {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			.select .people {
+				margin-top: 0.5rem;
+				border-top: 0.01rem solid #AAAAAA;
+			}
+			.select .job ,.select .people{
+				flex-basis: 2rem;
+				font-size: 1rem;
+				text-align: center;
+			}
+			.select img {
+				width: 8rem;
+			}
+			.select .button{
+				flex-basis: 1rem;
+				font-size: 0.4rem;
+				margin: auto;
+			}
+			.select .button a{
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 1.6rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			.select .button .two{
+				padding: 0.3rem 1.9rem;
+			}
+			.select .quit {
+				flex-basis: 0.5rem;
+				margin: 1rem auto 0.3rem;
+				font-size: 0.38rem;
+				color: #008000;
+			}
+			/* 选择页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="select">
+			<div class="job">
+				<img src="../image/select1.png" alt="">
+			</div>	
+			<div class="button">
+				<a class="one" href="./BasicInfm.html">我要找工作</a>
+			</div>
+	
+			<div class="people">
+			    <img src="../image/select2.png" alt="">
+			</div>
+			<div class="button">
+				<a class="two" href="../recruit/BossCard.html">我要招人</a>
+			</div>
+	
+			<div class="quit">退出登录</div>
+		</div>
+	</body>
+</html>

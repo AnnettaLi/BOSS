@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>email</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_d0dzsbdsgen.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.email {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 填写邮箱页面 */
+			.email {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.email .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				padding-top: 0.8rem;
+				padding: 0.78rem 0.28rem 0.1rem 0.28rem;
+				background-color: #008080;
+				color: #FFFFFF;
+			}
+			.email .top a{
+				flex: 1 ;
+				color: #FFFFFF;
+			}
+			.email .top a:first-child {
+				font-size:0.5rem ;
+			}
+			.email .top a:last-child{
+				font-size:0.7rem ; 
+			}
+			.email .top p{
+				/* flex-grow: 1; */
+				flex: 8;
+				text-align: center;
+			}
+			/* 顶部结束 */
+			/* 输入 */
+			.email .input {
+				flex-basis: 1rem;
+				font-size: 0.68rem ;
+				background-color: #FFFFFF;
+				padding: 0 0.28rem;
+			}
+			.email .input input {
+				border: 0;
+				font-size: 0.38rem;
+				color: #AAAAAA;
+				font-family: 楷体;
+				width: 9rem;
+			}
+			/* 输入结束 */
+			/* 注意事项 */
+			.email .content {
+				flex-grow: 1;
+				font-size: 0.38rem;
+				font-weight: 100;
+				background-color: #EDEDED;
+			}
+			.email .content p {
+				margin: 0.4rem;
+			}
+			.email .content span {
+			}
+			/* 注意事项结束 */
+			/* 邮箱填写结束*/
+		</style>
+	</head>
+	<body>
+		<div class="email">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./Company.html"></a>
+				<p>接收简历邮箱</p>
+				<a class="iconfont icon-duigou" href="./See.html"></a>
+			</div>
+			<div class="input">
+				<input type="text" placeholder="请填写您的企业邮箱，例：zhizhi@kanzhun.com">
+			</div>
+			<div class="content">
+				<p>1.请使用企业邮箱，提高求职者对您的信任</p>
+				<p>2.不必担心被邮件轰炸，您通过Boss直聘收到的简历，都是求职者主动投递的</p>
+				<p>3.Boss直聘将会非常谨慎地通过邮箱联系您</p>
+			</div>
+		</div>
+	</body>
+</html>

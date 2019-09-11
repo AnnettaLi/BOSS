@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>duanxin</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.note{
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 短信验证码 */
+			.note {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			/* 标题 */
+			.note .title {
+				flex-basis: 3rem;
+				font-size: 0.8rem;
+			}
+			.note .title .one a{
+				font-size: 0.5rem;
+				text-decoration: none;
+			}
+			.note .title .two{
+				font-size: 0.8rem;
+				font-weight: 600;
+				margin-top: 0.8rem;
+			}
+			.note .title .three {
+				flex-grow: 1;
+				font-size: 0.38rem;
+				margin-top:0.20rem ;
+			}
+			/* 标题结束 */
+			/* 输入框 */
+			.note .input {
+				flex-basis: 0.6rem;
+				margin-top: 1.2rem;
+			}
+			.note .input input {
+				float: left;
+				border: 0;
+				border-bottom: 0.01rem solid #AAAAAA; 
+				appearance: none;
+				margin-left: 0.6rem;
+			}
+			/* 输入框结束 */
+			
+			.note .again {
+				flex-basis: 0.2rem;
+				font-size: 0.38rem;
+				text-align: center;
+				color: #AAAAAA;
+			}
+			/* 按钮 */
+			.note .button {
+				flex-basis: 1.4rem;
+				font-size: 0.5rem;
+				margin-top:0.8rem ;
+			}
+			.note .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 按钮结束 */
+			.note .sound {
+				flex-grow: 1;
+				font-size: 0.38rem;
+				color: #AAAAAA;
+			}
+			/* 短信验证码结束 */
+		</style>
+	</head>
+	<body>
+		<div class="note">
+			<div class="title">
+				<div class="one">
+					<a class="iconfont icon-fanhui" href="./shurushoujihao.html"></a>
+				</div>
+				<div class="two">输入短信验证码</div>
+				<div class="three">已向您的手机发送验证码</div>
+			</div>
+			<div class="input">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+				<input type="text">
+			</div>
+			<div class="again">重新发送（60s）</div>
+			<div class="button">
+				<a href="./select.html">下一步</a>
+			</div>
+			<div class="sound">语音接听验证码</div>
+		</div>
+	</body>
+</html>

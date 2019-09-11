@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>card</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_4mwfl02es9.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_0g5j9nosz7l5.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.card {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* Boss名片页面 */
+			.card{
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.card .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.card .top a {
+				flex: 5 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.card .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.card .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.card .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 填写信息栏 */
+			.card .write {
+				flex-grow: 1;
+				font-size: 0.38rem;
+				margin-top: 0.3rem;
+			}
+			.card .write input {
+				border: 0;
+				font-size: 0.52rem;
+				font-family: 楷体;
+				margin: 0.2rem auto;
+				width: 7rem;
+			}
+			.card .pic,.card .name,.card .company,.card .mine,.card .email{
+				margin-top: 0.25rem;
+				border-bottom: 1px solid #AAAAAA;
+			}
+			.card .pic {
+				display: flex;
+				margin-top: 0.2rem;
+			}
+			.card .pic span{
+				flex: 7;
+				margin: auto;
+			}
+			.card .pic p{
+				flex: 1;
+				font-size: 1rem;
+				margin-bottom: 0.3rem;
+			}
+			.card .write a{
+				float: right;
+				font-size: 0.42rem;
+			}
+			/* 填写结束 */
+			/* 按钮 */
+			.card .button {
+				flex-basis:1rem ;
+				font-size: 0.5rem;
+				margin-top:1rem ;
+			}
+			.card .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4.4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 底部按钮结束 */
+			/* Boss名片页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="../xuanze.html"></a>
+			</div>
+			<div class="title">
+				<span>创建Boss名片</span>
+				<p>向牛人介绍一下自己吧</p>
+			</div>
+			<div class="write">
+				<div class="pic">
+					<span>头像</span>
+					<p class="iconfont icon-icon-test-copy"></p>
+				</div>
+				<div class="name">
+					<span>姓名</span>
+					<div class="select">
+						<input type="text" placeholder="请填写您的姓名">
+					</div>
+				</div>
+				<div class="company">
+					<span>我的公司</span>
+					<div class="select">
+						<input type="text" placeholder="您当前就职的公司">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="mine">
+					<span>我的职务</span>
+					<div class="select">
+						<input type="text" placeholder="明确的职务,更能赢得牛人信任">
+					</div>
+				</div>
+				<div class="email">
+					<span>我的邮箱</span>
+					<div class="select">
+						<input type="text" placeholder="请填写邮箱(选填)">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button">
+				<a href="./Company.html">完成</a>
+			</div>
+		</div>
+	</body>
+</html>

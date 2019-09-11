@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>experience</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_4mwfl02es9.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.experience {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 填写基本信息页面 */
+			.experience {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.experience .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.experience .top a:first-child {
+				flex: 5 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			.experience .top a:last-child{
+				flex: 1;
+				font-weight: 500;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.experience .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.experience .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.experience .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 填写信息栏 */
+			.experience .write {
+				flex-grow: 1;
+				font-size: 0.38rem;
+				margin-top: 0.3rem;
+			}
+			.experience .write input {
+				border: 0;
+				font-size: 0.52rem;
+				font-family: 楷体;
+				margin: 0.2rem auto;
+				width: 7rem;
+			}
+			.experience .school,
+			.experience .degree,
+			.experience .time,
+			.experience .onsch{
+				margin-top: 0.25rem;
+				border-bottom: 1px solid #AAAAAA;
+			}
+			.experience .write a{
+				float: right;
+				font-size: 0.42rem;
+			}
+			/* 填写结束 */
+			/* 按钮 */
+			.experience .button {
+				flex-basis:1rem ;
+				font-size: 0.5rem;
+				margin-top:1rem ;
+			}
+			.experience .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 底部按钮结束 */
+			/* 教育经历页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="experience">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./BasicInfm.html"></a>
+				<a href="./SchExperience.html">下一步</a>
+			</div>
+			<div class="title">
+				<span>教育经历</span>
+				<p>详细的教育经历能为简历加分哦</p>
+			</div>
+			<div class="write">
+				<div class="school">
+					<span>学校</span>
+					<div class="select">
+						<input type="text" placeholder="请填写学校名称">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="degree">
+					<span>学历</span>
+					<div class="select">
+						<input type="text" placeholder="请选择学历">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="time">
+					<span>时间段</span>
+					<div class="select">
+						<input type="text" placeholder="请选择时间段">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+							
+						</div>
+					</div>
+				</div>
+				<div class="onsch">
+					<span>在校经历</span>
+					<div class="select">
+						<input type="text" placeholder="请填写在校经历">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button">
+				<a href="./SchExperience.html">下一步</a>
+			</div>
+		</div>
+	</body>
+</html>

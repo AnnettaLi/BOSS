@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>see</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_4mwfl02es9.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.see {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 推荐页面 */
+			.see {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.see .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.see .top a:first-child {
+				flex: 5 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			.see .top a:last-child{
+				flex: 1;
+				font-weight: 500;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.see .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.see .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.see .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 填写信息栏 */
+			.see .content {
+				flex-basis: 6rem;
+				font-size: 0.38rem;
+				margin-top: 0.3rem;
+			}
+			.see .content input {
+				border: 0;
+				font-size: 0.52rem;
+				font-family: 楷体;
+				margin: 0.2rem auto;
+				width: 7rem;
+			}
+			.see .one,.see .two,.see .three,.see .four{
+				margin-top: 0.25rem;
+				border-bottom: 1px solid #AAAAAA;
+			}
+			.see .content a {
+				float: right;
+				font-size: 0.42rem;
+			}
+			.see .two {
+				display: flex;
+			}
+			.see .two div {
+				flex: 1;
+				margin: 0.2rem auto 0.4rem;
+				text-align: center;
+				border-right: 1px solid #AAAAAA;
+			}
+			.see .two div:last-child{
+				border: 0;
+			}
+			.see .two div span {
+				font-size: 0.38rem;
+			}
+			.see .two div p{
+				font-size: 0.52rem;
+				color: #AAAAAA;
+			}
+			/* 填写结束 */
+			/* 按钮 */
+			.see .button {
+				flex-basis:1rem ;
+				font-size: 0.5rem;
+				margin-top:1rem ;
+			}
+			.see .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4.4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 底部按钮结束 */
+			.see .bottom {
+				flex-grow: 1;
+				font-size: 0.28rem;
+				color: #AAAAAA;
+				margin-top: 0.2rem;
+			}
+			/* 推荐页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="see">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./Email.html"></a>
+				<a href="./Post.html">完成</a>
+			</div>
+			<div class="title">
+				<span>想看看什么样的人</span>
+				<p>将根据您的要求推荐优质候选人</p>
+			</div>
+			<div class="content">
+				<div class="one">
+					<span>我要招聘</span>
+					<div class="select">
+						<input type="text" placeholder="请填写职位名称">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="two">
+					<div>
+						<span>经验要求</span>
+						<p>请选择</p>
+					</div>
+					<div>
+						<span>最低学历</span>
+						<p>请选择</p>
+					</div>
+					<div>
+						<span>薪资范围</span>
+						<p>请选择</p>
+					</div>
+				</div>
+				<div class="three">
+					<span>职位描述</span>
+					<div class="select">
+						<input type="text" placeholder="请填写职位描述">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+				<div class="four">
+					<span>工作地点</span>
+					<div class="select">
+						<input type="text" placeholder="请选择工作地点">
+						<a class="iconfont icon-youjiantou" href=""></a>
+						<div class="details">
+								
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button">
+				<a href="./Post.html">完成</a>
+			</div>
+			<div class="bottom">
+				发布职位即表示同意遵守《Boss直聘职位信息发布规则》，如违反规则将可能导致您的账号被锁定
+			</div>
+		</div>
+	</body>
+</html>

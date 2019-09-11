@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shouye</title>
+	<link rel="stylesheet" href="./xuanze.html">
+	<style>
+	    /*首页*/
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    	list-style: none;
+	    }
+	    html ,body ,.shouye{
+	    	height: 100%;
+	    	width: 100%;
+	    }
+		.shouye{
+			background-color: #22b7b3;
+			position: relative;
+			animation: xs 4s infinite;
+			animation-timing-function: ease-out;
+		}
+		.shouye p{
+			position: absolute;
+			text-align: center;
+			left: 50%;
+			margin-left:-40%;
+			color: #fff;
+			width: 80%;
+		}
+		.shouye p.one {
+			font-size: 56px;
+			top: 30%;
+		}
+		.shouye p.two {
+			font-size: 70px;
+			font-weight: bold;
+			width: 40%;
+			top: 80%;
+			margin-left:-20%;
+		}
+		.shouye p.three{
+			font-size: 36px;
+			font-weight:100 ;
+			top: 90%;
+		}
+		/*首页结束*/
+		/*动画效果*/
+		@keyframes xs{
+			90%{
+				background-color: #FFFFFF;
+			}
+			100%{
+				
+			}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="shouye">
+		<p class="one">用聊天的方式找工作</p>
+		<p class="two">BOSS直聘</p>
+		<p class="three">2019 BOSS直聘 All rights reserved.</p>
+	</div>
+</body>
+</html>

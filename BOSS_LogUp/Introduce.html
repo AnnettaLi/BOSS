@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xuanze</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		body,html,.xuanze {
+			width: 100%;
+			height: 100%;
+		}
+		/* 选择页面 */
+		.xuanze {
+			text-align: center;
+			position: relative;
+		}
+		.xuanze .wrapper{
+		    max-width: 1000px;
+		    width: 100% ;
+	     	height: 55%;
+		    margin:0 auto;
+		    overflow: hidden;
+	    }
+		.inner {
+			width: 4000px;
+			height: 100%;
+			animation: dong 8s infinite;
+		}
+		.inner div {
+			max-width: 1000px;
+			height: 100%;
+			float: left;
+			background-color: #008080;
+		}
+		.inner div img {
+			width: 100%;
+			height: 100%;
+		}
+		
+		/* 动画效果  轮播图 */ 
+		@keyframes dong {
+				0%{
+					margin-left:0;
+				}
+				33%{
+					margin-left:-1000px;
+				}
+				66%{
+					margin-left:-2000px;
+				}
+				100%{
+					margin-left:-3000px;
+				}
+		}
+		/* 轮播图结束 */
+		/* 内容文字 */
+		.xuanze .content {
+			position: absolute;
+			top: 75%;
+			width: 500px;
+			height: 10%;
+			left: 50%;
+			margin-left: -250px;
+			/* margin:0 auto; */
+			overflow: hidden;
+		}
+		.xuanze .content .word {
+			width: 2000px;
+			height: 100%;
+			animation: nr 8s infinite;
+		}
+		.xuanze .content .word::after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		.xuanze .content .word  div{
+			width: 500px;
+			height: 100%;
+			float: left;
+		}
+		.xuanze .content .word  div span{
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.xuanze .content .word  div p{
+			font-size:28px;
+		}
+		/* 动画效果 */
+		@keyframes nr{
+			0%{
+				margin-left: 0;
+		    }
+			33%{
+				margin-left: -500px;
+			}
+			66%{
+				margin-left: -1000px;
+			}
+			100%{
+				margin-left: -1500px;
+			}
+		}
+		/* 内容结束 */
+		.xuanze .button {
+			width: 100%;
+			position: absolute;
+			top: 93%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.xuanze .button a {
+			background-color: #008080;
+			font-family: "宋体";
+			font-size: 34px;
+			color: #FFFFFF;
+			padding: 30px 100px;
+		}
+		.xuanze .button a:first-child {
+		    margin-right: 50px;
+		}
+		/* 选择页面结束 */
+	</style>
+</head>
+<body>
+	<div class="xuanze">
+		<div class="wrapper">
+			<div class="inner">
+				<div class="one">
+					<img src="./image/xuanze1.jpg" alt="">
+				</div>
+				<div class="two">
+					<img src="./image/xuanze2.jpg" alt="">
+				</div>
+				<div class="three">
+					<img src="./image/xuanze3.jpg" alt="">
+				</div>
+				<div class="four">
+					<img src="./image/xuanze1.jpg" alt="">
+				</div>
+	        </div>
+		</div>
+		<div class="content">
+			<div class="word">
+			    <div class="one">
+				  <span>与未来上司直接沟通</span>
+				  <p>百万数量Boss已入驻，等你开聊</p>
+			    </div>
+		  	    <div class="two">
+				  <span>聊着天把工作搞定</span>
+				  <p>谈薪资、聊待遇，直接沟通，解答疑问</p>
+			    </div>
+			   <div class="three">
+				  <span>快速入职新单位</span>
+				  <p>找工作到入职，最快只要一天</p>
+			    </div>
+			    <div class="four">
+			      <span>与未来上司直接沟通</span>
+			      <p>百万数量Boss已入驻，等你开聊</p>
+			    </div>
+			</div>
+		</div>
+		<div class="button">
+			<a href="./recruit/BossCard.html">我要招人</a>
+			<a href="./Apply/shurushoujihao.html">我要应聘</a>
+		</div>
+	</div>
+</body>
+</html>

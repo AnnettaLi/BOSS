@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>job</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_wccm1bm2tcj.css"/>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.job {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 填写求职意向页面 */
+			.job {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.job .top {
+				flex-basis: 0.8rem;
+				font-size:0.46rem ;
+				margin-top: 0.4rem;
+				font-weight: bolder;
+				/* float: right; */
+				text-align: right;
+			}
+			.job .top a{
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.job .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.6rem;
+			}
+			.job .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.job .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 填写内容 */
+			.job .content {
+				flex-grow: 4rem;
+				font-size: 0.36rem;
+				margin-top: 0.5rem;
+			}
+			.job .content p{
+				font-weight: 100;
+			}
+			
+			.job .content input{
+				border: 0;
+				font-size: 0.52rem;
+				font-family: 楷体;
+				margin: 0.2rem auto 0.5rem;
+			}
+			/* 填写内容结束 */
+			/* 开关 */
+			.job .switch{
+				flex-grow: 1;
+				font-size: 0.62rem;
+				display: flex;
+			}
+			.job .switch .one {
+				flex: 5;
+				font-size: 0.36rem;
+				margin: 0;
+			}
+			.job .switch .one p:last-child {
+				font-size: 0.32rem;
+				color: #AAAAAA;
+				margin-top: 0.15rem;
+			}
+			.job .switch .two{
+				flex: 1;
+			}
+			.job .switch .two p{
+				font-size: 1.2rem;
+				color: #008080;
+			}
+			/* 开关结束 */
+			/* 按钮 */
+			.job .button {
+				flex-basis:1rem ;
+				font-size: 0.5rem;
+				margin-top:1rem ;
+			}
+			.job .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4.4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 按钮结束 */
+			/* 求职意向页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="job">
+			<div class="top">
+				<a href="./">完成</a>
+			</div>
+			<div class="title">
+				<span>求职意向</span>
+				<p>根据求职意向为您推荐相关职位</p>
+			</div>
+			<div class="content">
+				<p>意向类型</p>
+				<input type="text" placeholder="在校生——找实习">
+				<p>期望职位</p>
+				<input type="text" placeholder="请选择期望职位">
+				<p>期望行业</p>
+				<input type="text" placeholder="不限">
+				<p>工作城市</p>
+				<input type="text" placeholder="请选择工作城市">
+			</div>
+			<div class="switch">
+				<div class="one">
+					<p>允许猎头看到我</p>
+					<p>平台会将您推荐给有合适职位的认证猎头</p>
+				</div>
+				<div class="two">
+					<p class="iconfont icon-kaiguan"></p>
+				</div>
+			</div>
+			<div class="button">
+				<a href="./">完成</a>
+			</div>
+		</div>
+	</body>
+</html>

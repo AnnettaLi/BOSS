@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>school</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_d0dzsbdsgen.css">
+		<link rel="stylesheet" href="http//at.alicdn.com/t/font_1329464_dlb5tc9ggw8.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.school {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 填写在校经历页面 */
+			.school {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.school .top {
+				flex-basis: 0.8rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+				border-bottom: 0.01rem solid #EDEDED;
+			}
+			.school .top a:first-child {
+				flex: 6 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			.school .top a:last-child{
+				flex: 1;
+				font-size:0.7rem ;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.school .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.6rem;
+			}
+			.school .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.school .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 输入框 */
+			.school .description {
+				flex-basis: 3rem;
+				font-size: 0.8rem;
+				border-bottom: 0.01rem solid #AAAAAA;
+				margin-top: 0.38rem;
+			}
+			.school .description textarea {
+				border: 0;
+				font-size:0.42rem ;
+				font-family: 楷体;
+			}
+			/* 输入框结束 */
+			.school .see {
+				flex-grow: 1;
+				font-size: 0.58rem;
+				display: flex;
+				margin-top: 0.3rem;
+			}
+			.school .see p:first-child {
+				flex: 1;
+				font-size: 0.7rem;
+				color: #333333;
+			}
+			.school .see p:nth-child(2) {
+				flex-grow: 7;
+				font-size: 0.28rem;
+			}
+			.school .see p:last-child {
+				flex: 1.5;
+				font-size: 0.28rem;
+			}
+			/* 在校经历结束 */
+		</style>
+	</head>
+	<body>
+		<div class="school">
+			<div class="top"> 
+				<a class="iconfont icon-fanhui" href="./EduExperience.html"></a>
+				<a class="iconfont icon-duigou" href="./MyAdvantage.html"></a>
+			</div>
+			<div class="title">
+				<span>在校经历</span>
+				<p>简要概述在校期间的表现</p>
+			</div>
+			<div class="description">
+				  <textarea placeholder="1在校担任职务... 2.获得荣誉... 3.所学主要课程..." name="description" cols="42" rows="9"></textarea>
+			</div>
+			<div class="see">
+				<p class="iconfont icon-kanguo"></p>
+				<p>看看别人怎么写</p>
+				<p>0/300</p>
+			</div>
+		</div>
+	</body>
+</html>

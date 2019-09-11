@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>describe</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+	    <style>
+	    	*{
+	    		margin: 0;
+	    		padding: 0;
+	    		list-style: none;
+	    	}
+	    	body,html,.describe {
+	    		width: 100%;
+	    		height: 100%;
+	    		font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+	    		font-family: 楷体;
+	    	}
+	    	/* 职位描述页面 */
+	    	.describe{
+	    		display: flex;
+	    		flex-direction: column;
+	    		align-content: center;
+	    		padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+	    	}
+	    	a {
+	    		text-decoration: none;
+	    	}
+	    	/* 顶部 */
+	    	.describe .top {
+	    		flex-basis: 1rem;
+	    		font-size:0.5rem ;
+	    		display: flex;
+	    		margin-top: 0.4rem;
+	    	}
+	    	.describe .top a:first-child {
+	    		flex: 5 ;
+	    		font-size:0.5rem ;
+	    		font-weight: 600;
+	    		color: #333333;
+	    	}
+	    	.describe .top a:last-child{
+	    		flex: 1;
+	    		font-weight: 600;
+	    		color: #333333;
+	    	}
+	    	/* 顶部结束 */
+	    	/* 标题 */
+	    	.describe .title {
+	    		flex-basis: 1.6rem;
+	    		font-size:0.72rem ;
+	    		margin-top: 0.4rem;
+	    	}
+			.describe .title span {
+				font-weight: 600;
+			}
+			.describe .title p {
+				font-size: 0.32rem;
+				margin-top: 0.15rem;
+			}
+	    	/* 标题结束 */
+			/* 输入框 */
+			.describe .description {
+				flex-grow: 1;
+				font-size: 0.8rem;
+				margin-top: 0.38rem;
+			}
+			.describe .description textarea {
+				border: 0;
+				font-size:0.42rem ;
+				font-family: 楷体;
+			}
+			/* 职位描述结束 */
+	    </style>
+	</head>
+	<body>
+		<div class="describe">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="Post.html"></a>
+				<a href="./Location.html">保存</a>
+			</div>
+			<div class="title">
+				<span>职位描述</span>
+				<p>详细清晰的职位描述能获得更多牛人关注</p>
+				<p>不能填写QQ、微信、电话等联系方式，以及特殊符号</p>
+			</div>
+			<div class="description">
+				  <textarea placeholder="1.工作内容 2.任务要求 3.特别说明" name="description" cols="42" rows="9"></textarea>
+			</div>
+		</div>
+	</body>
+</html>

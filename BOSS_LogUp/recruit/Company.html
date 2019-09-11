@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>company</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.company {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* Boss名片页面 */
+			.company{
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.company .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.company .top a {
+				flex: 5 ;
+				font-size:0.5rem ;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.company .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.company .title span {
+				font-size: 0.72rem;
+				font-weight: 700;
+			}
+			.company .title p {
+				font-size: 0.38rem;
+				font-weight: 100;
+				margin-top: 0.1rem;
+			}
+			/* 标题结束 */
+			/* 输入 */
+			.company .input {
+				flex-basis: 0.8rem;
+				font-size: 0.38rem;
+		        border-bottom: 0.01rem solid #AAAAAA;
+				display: flex;
+				padding-bottom: 0.18rem;
+				margin-top: 0.3rem;
+			}
+			.company .input input {
+				flex:9;
+				border: 0;
+				font-size: 0.38rem;
+				font-family: 楷体;
+			}
+			.company .input p {
+				flex: 1;
+				margin: auto;
+			}
+			/* 输入结束 */
+			/* 注意事项 */
+			.company .important {
+				flex-basis: 2rem;
+				font-size: 0.32rem;
+				color: #AAAAAA;
+				margin-top: 0.6rem;
+			}
+			.company .important span {
+				color: #333333;
+			}
+			.company .important p{
+				margin: 0.2rem auto;
+			}
+			/* 注意事项结束 */
+			/* 营业执照 */
+			.company .img {
+				flex-grow: 1;
+				font-size: 0.4rem;
+				text-align: center;
+			}
+			.company .img img {
+				font-size: 0.1rem;
+			}
+			/* 照片结束 */
+			/* 按钮 */
+			.company .button {
+				flex-basis: 1.4rem;
+				font-size: 0.5rem;
+				margin-top:0.8rem ;
+			}
+			.company .button a {
+				color: #FFFFFF;
+				width: 2rem;
+				background-color: #008080;
+				padding: 0.3rem 4rem;
+				text-decoration: none;
+				text-align: center;
+				font-weight: 100;
+			}
+			/* 按钮结束 */
+		</style>
+	</head>
+	<body>
+		<div class="company">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./BossCard.html"></a>
+			</div>
+			<div class="title">
+				<span>公司全称</span>
+				<p>当前就职的公司</p>
+			</div>
+			<div class="input">
+				<input type="text" placeholder="请输入您所属公司营业执照上的公司名称">
+				<p>0/46</p>
+			</div>
+			<div class="important">
+				<span>注意事项</span>
+				<p>1.请输入您所属公司营业执照上的公司名称</p>
+				<p>2.请注意区分总公司和分公司</p>
+				<p>3.公司名称将用于后续的企业认证使用，请确保准确性</p>
+			</div>
+			<div class="img">
+				<img src="../image/company.png" alt="">
+			</div>
+			<div class="button">
+				<a href="./Email.html">下一步</a>
+			</div>
+		</div>
+	</body>
+</html>

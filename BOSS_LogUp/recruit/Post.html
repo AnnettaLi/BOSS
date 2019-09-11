@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>post</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_f8e8m8mh87w.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1329464_4mwfl02es9.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body,html,.post {
+				width: 100%;
+				height: 100%;
+				font-size: 625%; /* 1rem = 100px  6.25*16 = 100 */
+				font-family: 楷体;
+			}
+			/* 职位名称页面 */
+			.post {
+				display: flex;
+				flex-direction: column;
+				align-content: center;
+				padding: 0.58rem 0.28rem 0.58rem 0.28rem;
+			}
+			a {
+				text-decoration: none;
+			}
+			/* 顶部 */
+			.post .top {
+				flex-basis: 1rem;
+				font-size:0.5rem ;
+				display: flex;
+				margin-top: 0.4rem;
+			}
+			.post .top a:first-child {
+				flex: 5 ;
+				font-size:0.5rem ;
+				font-weight: 600;
+				color: #333333;
+			}
+			.post .top a:last-child{
+				flex: 1;
+				font-weight: 600;
+				color: #333333;
+			}
+			/* 顶部结束 */
+			/* 标题 */
+			.post .title {
+				flex-basis: 1.6rem;
+				font-size:0.62rem ;
+				margin-top: 0.4rem;
+			}
+			.post .title span {
+				font-size: 0.72rem;
+			}
+			.post .title p {
+				font-size: 0.32rem;
+				margin-top: 0.1rem;
+				color: #AAAAAA;
+			}
+			/* 标题结束 */
+			/* 输入 */
+			.post .input {
+				flex-basis: ; 1rem;
+				font-size: 0.38rem;
+				padding: 0.4rem 0 0.25rem;
+				border-bottom: 0.01rem solid #AAAAAA;
+			}
+			.post .input input {
+				border: 0;
+				font-size: 0.52rem; 
+				font-family: 楷体;
+			}
+			.post .input p {
+				float: right;
+			}
+			/* 输入框结束 */
+			/* 选择 */
+			.post .select {
+				flex-basis:8rem ;
+				font-size: 0.42rem;
+				display: flex;
+				flex-direction: column;
+			}
+			.post .select div {
+				padding: 0.4rem 0 0.7rem;
+				border-bottom: 0.01rem solid #AAAAAA;
+				display: flex;
+			}
+			.post .select div:last-child {
+				border: 0;
+			}
+			.post .select div p {
+				align-content: center;
+				flex: 9;
+			}
+			.post .select div a {
+				fill: 1;
+				font-size: 0.4rem;
+				color: #333333;
+			}
+			/* 选择结束 */
+			/* 职位名称页面结束 */
+		</style>
+	</head>
+	<body>
+		<div class="post">
+			<div class="top">
+				<a class="iconfont icon-fanhui" href="./See.html"></a>
+				<a href="./Describe.html">保存</a>
+			</div>
+			<div class="title">
+				<span>职位名称</span>
+				<p>不能填写QQ、微信、电话等联系方式，以及特殊符号</p>
+			</div>
+			<div class="input">
+				<input type="text" name="" id="" value="" placeholder="输入职位名称">
+			    <p>0/20</p>
+			</div>
+			<div class="select">
+				<div >
+				    <p>技术</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>运营</p>
+			    	<a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>销售</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>人事/财务/行政</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div class="5">
+				    <p>高级管理</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>传媒</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>金融</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div class="8">
+				    <p>教育培训</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+				<div >
+				    <p>市场</p>
+				    <a class="iconfont icon-youjiantou" href=""></a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
